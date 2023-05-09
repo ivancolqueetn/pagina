@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+li a{
+    text-decoration: none;
+    font-size: 15;
+    font-weight: 400;
+    color: black;
+}
+li{
+    padding: 0px 20px;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
+.button{
+    padding: 8px 15px;
+    text-decoration: none;
+    display: flex;
+    width: 150;
+    background-color: blueviolet;
+    color: aliceblue;
+    border-radius: 24px;
+    justify-content: center;
+}
+
+
+header{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 20;
+}
+
+
+.logo__header{
+    height: 100px;
+    width: 240px;
+}
+.container__menu{
+    grid-column: 6/13;
+    
+}
+.container__logo{
+    grid-column: 1/5;
+    margin-left: 65px;
+}
+
+
+.hero__tienda .grid{
+    background: linear-gradient(0deg, rgba(255,255,255,0) 70%, rgba(255,255,255,80) 96%),url(./media/FondoTienda.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero__tienda__container{
+    grid-column: 5/9;
+    display: flex;
+    justify-content: center;
+}
+
+.title__tienda{
+    font-size: 63;
+    font-weight: 550;
+    padding: 50px 0px;
+    opacity: 0.8;
+}
+
+.title__estilo h2{
+    font-size: 40;
+    font-weight: 550;
+    padding: 50px 0px;
+}
+.estilo{
+    height: auto;
+}
+
+.estilo__container{
+    height: auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.targetas__container{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid rgb(182, 179, 179);
+    margin-top: 50px;
+}
+.footer__container{
+    grid-column: 1/-1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo__footer{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+
+    
+}
+.footer__iconos{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 10px;
+}
+
+.enlaces__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    
+}
+
+.enlaces__footer ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.condiciones__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+.condiciones__footer ul{
+    display: flex;
+    flex-direction: column;
+}
+.contacto__footer{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+/* media query mobile */
+
+@media (max-width: 576px){
+    header .grid{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .container__menu{
+        grid-column: 1/-1;
+        display: flex; 
+    }
+    .container__logo{
+        grid-column: 1/-1;
+        margin-left: 15px;
+    }
+    
+    .targetas__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__container{
+        grid-column: 1/-1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    .enlaces__footer{
+        grid-column: 1/-1;
+    }
+}
